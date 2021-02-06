@@ -15,6 +15,7 @@ public class SelectingLanguageTest extends TestBase {
 	{
 		landingPageObject = new LandingPage(driver);
 		landingPageObject.selectingWebsiteLanguage();
+		// verify that the english language selected successfully
 		Assert.assertTrue(driver.getCurrentUrl().contains("en/"));
 	}
 }

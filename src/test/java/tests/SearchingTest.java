@@ -18,6 +18,7 @@ public class SearchingTest extends TestBase {
 		Object.SearchingFunction();
 
 	}
+	// Click on the second lesson
 	@Test(priority = 2)
 	public void ClickTheSecondLesson () throws IOException
 	{
