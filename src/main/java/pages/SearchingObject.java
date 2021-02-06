@@ -27,7 +27,7 @@ public class SearchingObject extends PageBase{
 	// finding the search icon element 
 	@FindBy(className = "search")
 	WebElement SearchIcon;
-	
+
 	// finding the search input text box element
 	@FindBy(id = "txt_search_query")
 	WebElement SearchingInput;
@@ -52,15 +52,16 @@ public class SearchingObject extends PageBase{
 		// get the searching keyword from the excel sheet and store it in string
 		SearchKeyword = sheet11.getRow(1).getCell(0).getStringCellValue();
 	}
-	
+
 	// searching for the keyword that is entered on the excel sheet 
-	public void SearchingFunction () throws IOException
+	public void SearchingFunction () throws IOException 
 	{
+		sleep(5);
 		ClickButton(AcceptCookiesBtn); // Click the accept cookies button
 		ClickButton(SearchIcon); // click on the search icon
 		ReadDataFromExcel(); // call read from excel sheet method
 		SearchingInput.sendKeys(SearchKeyword); // enter the searching keyword in the search input
-		SearchingInput.sendKeys(Keys.ENTER); // Click enter
+		SearchingInput.sendKeys(Keys.ENTER); // Click enter	
 		List<WebElement> result = Driver.findElements(By.cssSelector(".list li div")); // store the search result on the list of webelements
 		String SheetPath = path + "\\src\\test\\java\\utilities\\LeasonsSearchingResult.xlsx"; // declare the sheet path that the search result will be stored in it
 		File source  = new File(SheetPath);
@@ -85,8 +86,12 @@ public class SearchingObject extends PageBase{
 			CellValue.contains(SearchKeyword);
 		}
 		System.out.println("Result count: " + rowcount + " All searching result contains on the searching keyword");
+	}
 
-		// Click on 2nd lesson in the search results 
+	// Click on 2nd lesson in the search results 
+	public void ClickTheSecondLesson()
+	{
 		lessonNames.get(1).click();
+
 	}
 }

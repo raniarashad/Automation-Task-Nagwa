@@ -9,17 +9,19 @@ import pages.SearchingObject;
 public class SearchingTest extends TestBase {
 
 	SearchingObject Object;
-	
+
 	// user make Searching and check the result 
-	@Test
-	public void SearchingFunction()
+	@Test(priority = 1)
+	public void SearchingFunction() throws IOException
 	{
 		Object = new SearchingObject(driver);
+		Object.SearchingFunction();
 
-		try {
-			Object.SearchingFunction();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	}
+	@Test(priority = 2)
+	public void ClickTheSecondLesson () throws IOException
+	{
+		Object = new SearchingObject(driver);
+		Object.ClickTheSecondLesson();
 	}
 }

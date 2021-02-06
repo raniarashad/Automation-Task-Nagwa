@@ -15,11 +15,13 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import utilities.Helper;
 
-public class TestBase {
+public class TestBase extends AbstractTestNGCucumberTests {
 
 	public static WebDriver driver;
+	public String path = System.getProperty("user.dir");   // return project folder path
 
 	// this method will run before each suite
 	@BeforeSuite
@@ -30,7 +32,6 @@ public class TestBase {
 		// ignorecase -- ignore case from name B or b
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
-			String path = System.getProperty("user.dir");   // return project folder path
 			String driverpath = path + "\\Drivers\\chromedriver.exe";   // return driver folder path 
 			System.setProperty("webdriver.chrome.driver",driverpath ); 
 			driver = new ChromeDriver();
@@ -55,7 +56,7 @@ public class TestBase {
 	}
 
 	// this method will run after each suite
-	@AfterSuite(enabled = true)
+	@AfterSuite(enabled = false)
 	public void StopDriver()
 	{
 		driver.quit();

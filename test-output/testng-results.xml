@@ -1,47 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-06T09:56:40 EET" name="Nagwa" finished-at="2021-02-06T09:56:53 EET" duration-ms="13890">
+  <suite started-at="2021-02-06T13:45:34 EET" name="Nagwa" finished-at="2021-02-06T13:45:47 EET" duration-ms="13290">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.LeasonInnerPageTests@482bce4f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SearchingTest@55b53d44]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.WorkSheetTests@366647c2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-02-06T09:56:40 EET" name="Test" finished-at="2021-02-06T09:56:53 EET" duration-ms="13890">
+    <test started-at="2021-02-06T13:45:34 EET" name="Test" finished-at="2021-02-06T13:45:47 EET" duration-ms="13290">
       <class name="tests.LeasonInnerPageTests">
-        <test-method signature="InnerLeason()[pri:0, instance:tests.LeasonInnerPageTests@69fb6037]" started-at="2021-02-06T09:56:49 EET" name="InnerLeason" finished-at="2021-02-06T09:56:53 EET" duration-ms="3955" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.LeasonInnerPageTests@482bce4f]" started-at="2021-02-06T13:45:46 EET" name="setUpClass" finished-at="2021-02-06T13:45:46 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="InnerLeason()[pri:0, instance:tests.LeasonInnerPageTests@482bce4f]" started-at="2021-02-06T13:45:46 EET" name="InnerLeason" finished-at="2021-02-06T13:45:47 EET" duration-ms="1399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InnerLeason -->
-        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.LeasonInnerPageTests@69fb6037]" started-at="2021-02-06T09:56:53 EET" name="ScreenShot" finished-at="2021-02-06T09:56:53 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.LeasonInnerPageTests@482bce4f]" started-at="2021-02-06T13:45:47 EET" name="ScreenShot" finished-at="2021-02-06T13:45:47 EET" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InnerLeason status=SUCCESS method=LeasonInnerPageTests.InnerLeason()[pri:0, instance:tests.LeasonInnerPageTests@69fb6037] output={null}]]]>
+                <![CDATA[[TestResult name=InnerLeason status=SUCCESS method=LeasonInnerPageTests.InnerLeason()[pri:0, instance:tests.LeasonInnerPageTests@482bce4f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShot -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.LeasonInnerPageTests@482bce4f]" started-at="2021-02-06T13:45:47 EET" name="tearDownClass" finished-at="2021-02-06T13:45:47 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
       </class> <!-- tests.LeasonInnerPageTests -->
       <class name="tests.SearchingTest">
-        <test-method signature="SearchingFunction()[pri:0, instance:tests.SearchingTest@5f16132a]" started-at="2021-02-06T09:56:42 EET" name="SearchingFunction" finished-at="2021-02-06T09:56:49 EET" duration-ms="6927" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:35 EET" name="setUpClass" finished-at="2021-02-06T13:45:35 EET" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="SearchingFunction()[pri:1, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:35 EET" name="SearchingFunction" finished-at="2021-02-06T13:45:44 EET" duration-ms="8861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchingFunction -->
-        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.SearchingTest@5f16132a]" started-at="2021-02-06T09:56:49 EET" name="ScreenShot" finished-at="2021-02-06T09:56:49 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:44 EET" name="ScreenShot" finished-at="2021-02-06T13:45:44 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchingFunction status=SUCCESS method=SearchingTest.SearchingFunction()[pri:0, instance:tests.SearchingTest@5f16132a] output={null}]]]>
+                <![CDATA[[TestResult name=SearchingFunction status=SUCCESS method=SearchingTest.SearchingFunction()[pri:1, instance:tests.SearchingTest@55b53d44] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShot -->
+        <test-method signature="ClickTheSecondLesson()[pri:2, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:44 EET" name="ClickTheSecondLesson" finished-at="2021-02-06T13:45:45 EET" duration-ms="1534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickTheSecondLesson -->
+        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:45 EET" name="ScreenShot" finished-at="2021-02-06T13:45:46 EET" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickTheSecondLesson status=SUCCESS method=SearchingTest.ClickTheSecondLesson()[pri:2, instance:tests.SearchingTest@55b53d44] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SearchingTest@55b53d44]" started-at="2021-02-06T13:45:46 EET" name="tearDownClass" finished-at="2021-02-06T13:45:46 EET" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
       </class> <!-- tests.SearchingTest -->
       <class name="tests.SelectingLanguageTest">
-        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.SelectingLanguageTest@dd0c991]" started-at="2021-02-06T09:56:20 EET" name="StartDriver" finished-at="2021-02-06T09:56:40 EET" duration-ms="19403" status="PASS">
+        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" started-at="2021-02-06T13:45:20 EET" name="StartDriver" finished-at="2021-02-06T13:45:34 EET" duration-ms="13989" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,42 +89,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method signature="SelectWebsiteLanguage()[pri:0, instance:tests.SelectingLanguageTest@dd0c991]" started-at="2021-02-06T09:56:40 EET" name="SelectWebsiteLanguage" finished-at="2021-02-06T09:56:42 EET" duration-ms="2921" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" started-at="2021-02-06T13:45:34 EET" name="setUpClass" finished-at="2021-02-06T13:45:34 EET" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="SelectWebsiteLanguage()[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" started-at="2021-02-06T13:45:34 EET" name="SelectWebsiteLanguage" finished-at="2021-02-06T13:45:35 EET" duration-ms="1193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectWebsiteLanguage -->
-        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.SelectingLanguageTest@dd0c991]" started-at="2021-02-06T09:56:42 EET" name="ScreenShot" finished-at="2021-02-06T09:56:42 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" started-at="2021-02-06T13:45:35 EET" name="ScreenShot" finished-at="2021-02-06T13:45:35 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SelectWebsiteLanguage status=SUCCESS method=SelectingLanguageTest.SelectWebsiteLanguage()[pri:0, instance:tests.SelectingLanguageTest@dd0c991] output={null}]]]>
+                <![CDATA[[TestResult name=SelectWebsiteLanguage status=SUCCESS method=SelectingLanguageTest.SelectWebsiteLanguage()[pri:0, instance:tests.SelectingLanguageTest@5fa07e12] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShot -->
-        <test-method is-config="true" signature="StopDriver()[pri:0, instance:tests.SelectingLanguageTest@dd0c991]" started-at="2021-02-06T09:56:53 EET" name="StopDriver" finished-at="2021-02-06T09:56:54 EET" duration-ms="852" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.SelectingLanguageTest@5fa07e12]" started-at="2021-02-06T13:45:35 EET" name="tearDownClass" finished-at="2021-02-06T13:45:35 EET" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StopDriver -->
+        </test-method> <!-- tearDownClass -->
       </class> <!-- tests.SelectingLanguageTest -->
       <class name="tests.WorkSheetTests">
-        <test-method signature="CountingQuestions()[pri:0, instance:tests.WorkSheetTests@36d585c]" started-at="2021-02-06T09:56:53 EET" name="CountingQuestions" finished-at="2021-02-06T09:56:53 EET" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.WorkSheetTests@366647c2]" started-at="2021-02-06T13:45:47 EET" name="setUpClass" finished-at="2021-02-06T13:45:47 EET" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="CountingQuestions()[pri:0, instance:tests.WorkSheetTests@366647c2]" started-at="2021-02-06T13:45:47 EET" name="CountingQuestions" finished-at="2021-02-06T13:45:47 EET" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountingQuestions -->
-        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.WorkSheetTests@36d585c]" started-at="2021-02-06T09:56:53 EET" name="ScreenShot" finished-at="2021-02-06T09:56:53 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.WorkSheetTests@366647c2]" started-at="2021-02-06T13:45:47 EET" name="ScreenShot" finished-at="2021-02-06T13:45:47 EET" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CountingQuestions status=SUCCESS method=WorkSheetTests.CountingQuestions()[pri:0, instance:tests.WorkSheetTests@36d585c] output={null}]]]>
+                <![CDATA[[TestResult name=CountingQuestions status=SUCCESS method=WorkSheetTests.CountingQuestions()[pri:0, instance:tests.WorkSheetTests@366647c2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ScreenShot -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.WorkSheetTests@366647c2]" started-at="2021-02-06T13:45:47 EET" name="tearDownClass" finished-at="2021-02-06T13:45:47 EET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
       </class> <!-- tests.WorkSheetTests -->
     </test> <!-- Test -->
   </suite> <!-- Nagwa -->
