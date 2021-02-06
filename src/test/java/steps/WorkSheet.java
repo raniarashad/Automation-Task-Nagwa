@@ -21,7 +21,7 @@ public class WorkSheet extends TestBase {
 	@Then(": User will open the work sheet page")
 	public void User_will_open_the_work_sheet_page()
 	{
-		// verify that the work sheet page is opened correctlys
+		// verify that the work sheet page is opened correctly
 		Assert.assertTrue(driver.getCurrentUrl().contains("worksheets"));
 
 	}
