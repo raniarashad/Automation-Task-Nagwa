@@ -56,7 +56,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
 	}
 
 	// this method will run after each suite
-	@AfterSuite(enabled = false)
+	@AfterSuite(enabled = true)
 	public void StopDriver()
 	{
 		driver.quit();
