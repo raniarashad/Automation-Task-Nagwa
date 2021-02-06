@@ -9,7 +9,6 @@ import tests.TestBase;
 
 public class SelectingLanguage extends TestBase{
 
-	//WebDriver Driver;
 	LandingPage landingPageObject;
 
 	@When(": Click on the English Language button")
@@ -22,6 +21,7 @@ public class SelectingLanguage extends TestBase{
 	@Then(": The user will be redirected to the home page with the english language")
 	public void User_Redirected_to_HomePage_EnglishLanguage()
 	{
+		// verify that the home page is opened with the english language
 		Assert.assertTrue(driver.getCurrentUrl().contains("en/"));
 	}
 }

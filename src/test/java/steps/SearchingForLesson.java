@@ -23,7 +23,6 @@ public class SearchingForLesson extends TestBase {
 	public void User_will_click_on_the_second_lesson ()
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//Object = new SearchingObject(driver);
 		Object.ClickTheSecondLesson();
 	}
 
